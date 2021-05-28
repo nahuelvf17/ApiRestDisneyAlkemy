@@ -32,7 +32,6 @@ public class Genero {
 	private byte[] imagen;
 
 	@JsonIgnoreProperties(value= {"genero","personajes"}, allowSetters=true)
-	//@OneToMany(fetch = FetchType.LAZY, mappedBy = "genero", cascade = CascadeType.ALL)
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "genero", cascade = {CascadeType.PERSIST, CascadeType.DETACH,CascadeType.MERGE,CascadeType.REFRESH})
 	private List<Pelicula> peliculas;
 	

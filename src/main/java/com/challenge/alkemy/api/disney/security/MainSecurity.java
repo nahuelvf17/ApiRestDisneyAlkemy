@@ -3,14 +3,11 @@ package com.challenge.alkemy.api.disney.security;
 import java.util.Arrays;
 import java.util.Collections;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -44,8 +41,6 @@ public class MainSecurity extends WebSecurityConfigurerAdapter {
     //Devuelve el mensaje de no autorizado
     @Autowired
     JwtEntryPoint jwtEntryPoint;
-
-    private final static Logger logger = LoggerFactory.getLogger(MainSecurity.class);
 
     
     @Bean

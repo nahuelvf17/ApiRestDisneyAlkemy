@@ -12,17 +12,12 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
-
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.challenge.alkemy.api.disney.models.entity.Personaje;
 import com.challenge.alkemy.api.disney.models.repository.PersonajeRepository;
-
-import ch.qos.logback.classic.Logger;
-
 @Service
 public class PersonajeImpl implements PersonajeService{
 
@@ -39,8 +34,6 @@ public class PersonajeImpl implements PersonajeService{
 		
 		return repository.findAll();
 	}
-
-	private final static Logger logger = (Logger) LoggerFactory.getLogger(PersonajeImpl.class);
 
 	@Transactional(readOnly = true)
 	@Override

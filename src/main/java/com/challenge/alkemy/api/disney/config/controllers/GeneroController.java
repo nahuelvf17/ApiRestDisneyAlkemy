@@ -22,17 +22,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
-
 import com.challenge.alkemy.api.disney.commons.ControllerUtils;
 import com.challenge.alkemy.api.disney.dto.GeneroDto;
 import com.challenge.alkemy.api.disney.dto.GeneroUpdateDto;
 import com.challenge.alkemy.api.disney.models.entity.Genero;
 import com.challenge.alkemy.api.disney.models.entity.Pelicula;
-import com.challenge.alkemy.api.disney.services.GeneroImpl;
 import com.challenge.alkemy.api.disney.services.GeneroService;
-
 import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
 
 @RequestMapping("/movies/gender")
 @RestController

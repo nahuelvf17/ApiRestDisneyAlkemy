@@ -53,10 +53,6 @@ public class SwaggerConfig {
                 .securityContexts(Collections.singletonList(securityContext()))
                 .globalOperationParameters(parameters);
     }
-    
-    private ApiKey apiKey() {
-        return new ApiKey("Authorization", AUTHORIZATION_HEADER, "header");
-    }
 
     private ApiInfo metaInfo() {
 

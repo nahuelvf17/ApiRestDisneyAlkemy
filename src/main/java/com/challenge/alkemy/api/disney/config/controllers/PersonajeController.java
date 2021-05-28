@@ -7,8 +7,6 @@ import java.util.stream.Collectors;
 import javax.validation.Valid;
 
 import org.modelmapper.ModelMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -38,8 +36,6 @@ import io.swagger.annotations.ApiOperation;
 @RestController
 public class PersonajeController {
 	
-	private final static Logger logger = LoggerFactory.getLogger(PersonajeController.class);
-
 	@Autowired
 	private PersonajeService service;
 	

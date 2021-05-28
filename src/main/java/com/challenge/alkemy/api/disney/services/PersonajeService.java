@@ -3,7 +3,6 @@ package com.challenge.alkemy.api.disney.services;
 import java.util.List;
 import java.util.Optional;
 
-import com.challenge.alkemy.api.disney.models.entity.Pelicula;
 import com.challenge.alkemy.api.disney.models.entity.Personaje;
 
 public interface PersonajeService {

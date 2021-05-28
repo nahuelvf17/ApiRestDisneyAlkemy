@@ -1,12 +1,19 @@
 package com.challenge.alkemy.api.disney.dto;
 
+import java.io.Serializable;
+
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-public class PersonajeDto {
+public class PersonajeDto implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2662888507801229806L;
+
 	@JsonIgnore
 	private byte[] imagen;
 	

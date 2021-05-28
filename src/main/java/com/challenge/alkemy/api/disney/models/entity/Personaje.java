@@ -46,7 +46,6 @@ public class Personaje {
 	@NotEmpty
 	private String historia;
 	
-    //@ManyToMany(fetch = FetchType.LAZY, targetEntity = Pelicula.class, mappedBy = "personajes", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties(value= {"personajes"}, allowSetters=true)
 	@ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.DETACH,CascadeType.MERGE,CascadeType.REFRESH})
 	@JoinTable(name = "personajes_peliculas",

@@ -6,8 +6,6 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,9 +17,6 @@ import com.challenge.alkemy.api.disney.models.repository.GeneroRepository;
 
 @Service
 public class GeneroImpl implements GeneroService {
-
-	private final static Logger logger = LoggerFactory.getLogger(GeneroImpl.class);
-
 	
 	@Autowired
 	private GeneroRepository repository;
